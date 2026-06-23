@@ -358,6 +358,44 @@ section {
   font-size: 0.82rem;
 }
 
+/* Product showcase (real photo) */
+.showcase-grid {
+  display: grid;
+  gap: 40px;
+  align-items: center;
+}
+
+@media (min-width: 880px) {
+  .showcase-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.showcase-photo {
+  background: var(--white);
+  border-radius: 8px;
+  padding: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.showcase-photo img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.showcase-text h3 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.showcase-text p {
+  color: var(--gray-text);
+  margin-bottom: 28px;
+}
+
 /* Clients / segments */
 .segments-list {
   display: grid;
